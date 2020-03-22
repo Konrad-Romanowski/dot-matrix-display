@@ -1,0 +1,12 @@
+{
+  "name": "dot-matrix-display",
+  "version": "1.0.0",
+  "description": "dot matrix display, led display",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konrad Romanowski",
+  "license": "ISC",
+  "dependencies": {}
+}
