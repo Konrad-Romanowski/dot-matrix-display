@@ -14,7 +14,7 @@ class Display {
         const signal = text.reduce((signal,letter)=>{
             return [...signal,...letterToSignal(letter.toUpperCase())]
         },[]);
-        return signal;
+        this.signal = signal;
     }
 
     clearDisplay() {
@@ -23,13 +23,12 @@ class Display {
         });
     }
 
-    project(htmlInputElement) {
+    project() {
         this.clearDisplay();
-        const signalToDisplay = this.textFromInputToSignal(htmlInputElement);
-        const MAX = Math.max(this.display.length,signalToDisplay.length);
+        const MAX = Math.max(this.display.length, this.signal.length);
 
         for(i=0; i<MAX; i++){
-            signalToDisplay[i] ? this.display[i].classList.add("active") : null;
+            this.signal[i] ? this.display[i].classList.add("active") : null;
         }
     }
 }

@@ -7,7 +7,8 @@ const inputBox = document.getElementById('input-box');
 const dotMatrixDisplay = new Display(display);
 
 inputBox.addEventListener("input", () => {
-    dotMatrixDisplay.project(inputBox);
+    dotMatrixDisplay.textFromInputToSignal(inputBox);
+    dotMatrixDisplay.project();
 });
 
 
