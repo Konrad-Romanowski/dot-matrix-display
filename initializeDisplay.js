@@ -6,6 +6,6 @@ function initializeDisplay(htmlDisplayNode,columnsNumber) {
     }
     
     for(i=1;i<=7*columnsNumber;i++) {
-        display.appendChild(createDot());
+        htmlDisplayNode.appendChild(createDot());
     }
 }

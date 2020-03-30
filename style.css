@@ -33,7 +33,7 @@ body {
     margin: auto;
     border-radius: 5px;
     border: 1px solid #0395cf;
-    padding: 1rem;
+    padding: 0 1rem;
     margin-bottom: 4rem;
     background-color: #ffffff;
 }
@@ -45,6 +45,26 @@ body {
     text-indent: 6px;
     border-radius: 5px;
     border: 1px solid #0395cf;
+}
+
+.button {
+    height: 2rem;
+    line-height: 2rem;
+    width: 35%;
+    font-size: 1.2rem;
+    background-color: #0395cf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-active {
+    background-color: #690000;
+}
+
+.button:active {
+    transform: scale(0.95);
 }
 
 .display {

@@ -1,12 +1,14 @@
 class Display {
     constructor(htmlDisplayElement) {
         this.display = Array.from(htmlDisplayElement.childNodes);
+        //below line removes "text" element in first spot of the array grabbed with .childNodes property
         this.display.shift();
 
-        this.signal = [];
+        this.emptyDisplay = [];
         for(i=0; i < this.display.length; i++) {
-            this.signal[i] = false;
+            this.emptyDisplay[i] = false;
         }
+        this.signal = this.emptyDisplay;
     }
 
     textFromInputToSignal(htmlInputElement) {
@@ -14,7 +16,11 @@ class Display {
         const signal = text.reduce((signal,letter)=>{
             return [...signal,...letterToSignal(letter.toUpperCase())]
         },[]);
-        this.signal = signal;
+        //The emptyDisplay array is concatenated for animation method purposes
+        //it adds empty spaces at the end of the text and allows to use same
+        //project() method and have the animation effect of entering text to the
+        //display after end of it will leave the display area
+        this.signal = [...signal, ...this.emptyDisplay];
     }
 
     clearDisplay() {
@@ -24,11 +30,16 @@ class Display {
     }
 
     project() {
-        this.clearDisplay();
-        const MAX = Math.max(this.display.length, this.signal.length);
-
-        for(i=0; i<MAX; i++){
+        this.clearDisplay();       
+        for(i=0; i < this.display.length; i++){
             this.signal[i] ? this.display[i].classList.add("active") : null;
         }
+    }
+
+    animate() {
+                let firstColumn = this.signal.slice(0,7);
+                this.signal.splice(0,7);
+                this.signal = [...this.signal,...firstColumn];
+                this.project();
     }
 }
