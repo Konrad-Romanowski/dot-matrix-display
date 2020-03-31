@@ -12,9 +12,10 @@ class Display {
     }
 
     textFromInputToSignal(htmlInputElement) {
+        const letterSpacing = [false, false, false, false, false, false, false];
         const text = Array.from(htmlInputElement.value);
         const signal = text.reduce((signal,letter)=>{
-            return [...signal,...letterToSignal(letter.toUpperCase())]
+            return [...signal, ...letterSpacing, ...letterToSignal(letter.toUpperCase())]
         },[]);
         //The emptyDisplay array is concatenated for animation method purposes
         //it adds empty spaces at the end of the text and allows to use same

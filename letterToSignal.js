@@ -2,7 +2,6 @@ function letterToSignal(letter) {
     switch(letter) {
         case "A":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, true, true, true, true,
                 true, false, false, false, true, false, false,
                 true, false, false, false, true, false, false,
@@ -12,7 +11,6 @@ function letterToSignal(letter) {
             break;
         case "B":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -22,7 +20,6 @@ function letterToSignal(letter) {
             break;
         case "C":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, true, true, true, false,
                 true, false, false, false, false, false, true,
                 true, false, false, false, false, false, true,
@@ -32,7 +29,6 @@ function letterToSignal(letter) {
             break;
         case "D":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, false, false, false, true,
                 true, false, false, false, false, false, true,
@@ -42,7 +38,6 @@ function letterToSignal(letter) {
             break;
         case "E":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -52,7 +47,6 @@ function letterToSignal(letter) {
             break;
         case "F":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, true, false, false, false,
                 true, false, false, true, false, false, false,
@@ -62,7 +56,6 @@ function letterToSignal(letter) {
             break;
         case "G":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, true, true, true, false,
                 true, false, false, false, false, false, true,
                 true, false, false, false, true, false, true,
@@ -72,7 +65,6 @@ function letterToSignal(letter) {
             break;
         case "H":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, false, false, true, false, false, false,
                 false, false, false, true, false, false, false,
@@ -82,7 +74,6 @@ function letterToSignal(letter) {
             break;
         case "I":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, false, false, false, true,
                 true, true, true, true, true, true, true,
                 true, false, false, false, false, false, true
@@ -90,7 +81,6 @@ function letterToSignal(letter) {
             break;
         case "J":
             signal = [
-                false, false, false, false, false, false, false,
                 false, false, false, false, true, true, false,
                 false, false, false, false, false, false, true,
                 false, false, false, false, false, false, true,
@@ -100,7 +90,6 @@ function letterToSignal(letter) {
             break;
         case "K":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, false, false, true, false, false, false,
                 false, false, true, false, true, false, false,
@@ -110,7 +99,6 @@ function letterToSignal(letter) {
             break;
         case "L":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, false, false, false, false, false, true,
                 false, false, false, false, false, false, true,
@@ -120,7 +108,6 @@ function letterToSignal(letter) {
             break;
         case "M":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, true, false, false, false, false, false,
                 false, false, true, false, false, false, false,
@@ -130,7 +117,6 @@ function letterToSignal(letter) {
             break;
         case "N":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, false, true, false, false, false, false,
                 false, false, false, true, false, false, false,
@@ -140,7 +126,6 @@ function letterToSignal(letter) {
             break;
         case "O":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, true, true, true, false,
                 true, false, false, false, false, false, true,
                 true, false, false, false, false, false, true,
@@ -150,7 +135,6 @@ function letterToSignal(letter) {
             break;
         case "P":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, false, true, false, false,
                 true, false, false, false, true, false, false,
@@ -160,7 +144,6 @@ function letterToSignal(letter) {
             break;
         case "Q":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, true, true, true, false,
                 true, false, false, false, false, false, true,
                 true, false, false, false, true, false, true,
@@ -170,7 +153,6 @@ function letterToSignal(letter) {
             break;
         case "R":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, false, true, false, false,
                 true, false, false, false, true, false, false,
@@ -180,7 +162,6 @@ function letterToSignal(letter) {
             break;
         case "S":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, true, false, false, true, false,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -190,7 +171,6 @@ function letterToSignal(letter) {
             break;
         case "T":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, false, false, false, false,
                 true, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
@@ -200,7 +180,6 @@ function letterToSignal(letter) {
             break;
         case "U":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, false,
                 false, false, false, false, false, false, true,
                 false, false, false, false, false, false, true,
@@ -210,7 +189,6 @@ function letterToSignal(letter) {
             break;
         case "V":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, false, false,
                 false, false, false, false, false, true, false,
                 false, false, false, false, false, false, true,
@@ -220,7 +198,6 @@ function letterToSignal(letter) {
             break;
         case "W":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 false, false, false, false, false, true, false,
                 false, false, false, false, true, false, false,
@@ -230,7 +207,6 @@ function letterToSignal(letter) {
             break;
         case "X":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, false, false, false, true, true,
                 false, false, true, false, true, false, false,
                 false, false, false, true, false, false, false,
@@ -240,7 +216,6 @@ function letterToSignal(letter) {
             break;
         case "Y":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, false, false, false, false,
                 false, false, false, true, false, false, false,
                 false, false, false, false, true, true, true,
@@ -250,7 +225,6 @@ function letterToSignal(letter) {
             break;
         case "Z":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, false, false, true, true,
                 true, false, false, false, true, false, true,
                 true, false, false, true, false, false, true,
@@ -260,7 +234,6 @@ function letterToSignal(letter) {
             break;
         case "0":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, false, false, false, true,
                 true, false, false, false, false, false, true,
@@ -270,14 +243,12 @@ function letterToSignal(letter) {
             break;
         case "1":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, false, false, false, false, false,
                 true, true, true, true, true, true, true,
             ]
             break;
         case "2":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, true, true, true, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -287,7 +258,6 @@ function letterToSignal(letter) {
             break;
         case "3":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, false, false, false, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -297,7 +267,6 @@ function letterToSignal(letter) {
             break;
         case "4":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, false, false, false,
                 false, false, false, true, false, false, false,
                 false, false, false, true, false, false, false,
@@ -307,7 +276,6 @@ function letterToSignal(letter) {
             break;
         case "5":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, false, false, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -317,7 +285,6 @@ function letterToSignal(letter) {
             break;
         case "6":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -327,7 +294,6 @@ function letterToSignal(letter) {
             break;
         case "7":
             signal = [
-                false, false, false, false, false, false, false,
                 true, false, false, false, false, false, false,
                 true, false, false, false, false, false, false,
                 true, false, false, false, false, false, false,
@@ -337,7 +303,6 @@ function letterToSignal(letter) {
             break;
         case "8":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, true, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -347,7 +312,6 @@ function letterToSignal(letter) {
             break;
         case "9":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, false, false, true,
                 true, false, false, true, false, false, true,
                 true, false, false, true, false, false, true,
@@ -359,44 +323,37 @@ function letterToSignal(letter) {
                 signal = [
                     false, false, false, false, false, false, false,
                     false, false, false, false, false, false, false,
-                    false, false, false, false, false, false, false,
                     false, false, false, false, false, false, false
                 ]
                 break;
         case ".":
             signal = [
-                false, false, false, false, false, false, false,
                 false, false, false, false, false, false, true
             ]
             break;
         case ",":
             signal = [
-                false, false, false, false, false, false, false,
                 false, false, false, false, false, false, true,
                 false, false, false, false, false, true, false
             ]
             break;
         case "'":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, false, false, false, false, false
             ]
             break;
         case ":":
             signal = [
-                false, false, false, false, false, false, false,
                 false, false, true, false, false, true, false
             ]
             break;
         case "!":
             signal = [
-                false, false, false, false, false, false, false,
                 true, true, true, true, true, false, true
             ]
             break;
         case "?":
             signal = [
-                false, false, false, false, false, false, false,
                 false, true, false, false, false, false, false,
                 true, false, false, false, false, false, false,
                 true, false, false, false, true, false, true,
