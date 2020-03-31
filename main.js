@@ -11,9 +11,9 @@ inputBox.addEventListener("input", () => {
     dotMatrixDisplay.project();
 });
 
-const btnClassList = Array.from(btn.classList);
-
 btn.addEventListener('click',(e) => {
+    const btnClassList = Array.from(btn.classList);
+    
     if (btnClassList.includes('button-active')) {
         e.target.classList.remove('button-active');
         e.target.innerText = 'Animate';
@@ -25,6 +25,8 @@ btn.addEventListener('click',(e) => {
 
 setInterval(() => {
     console.log('💩');
+    const btnClassList = Array.from(btn.classList);
+    
     if(btnClassList.includes('button-active')) {
         dotMatrixDisplay.animate();
     }
