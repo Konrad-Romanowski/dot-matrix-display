@@ -1,4 +1,4 @@
-export default function initializeDisplay(htmlDisplayNode,columnsNumber) {
+export default function initializeDisplay(displayContainer,columnsNumber) {
     function createDot() {
         const dot = document.createElement('div');
         dot.setAttribute('class','dot');
@@ -6,6 +6,6 @@ export default function initializeDisplay(htmlDisplayNode,columnsNumber) {
     }
     
     for(let i=1; i <= 7*columnsNumber; i++) {
-        htmlDisplayNode.appendChild(createDot());
+        displayContainer.appendChild(createDot());
     }
 }
