@@ -343,9 +343,45 @@ export default function letterToSignal(letter) {
                 true, true, false, false, false, false, false
             ]
             break;
+        case "+":
+            signal = [
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false,
+                false, true, true, true, true, true, false,
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false
+            ]
+            break;
+        case "-":
+            signal = [
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false
+            ]
+            break;
         case ":":
             signal = [
                 false, false, true, false, false, true, false
+            ]
+            break;
+        case "/":
+            signal = [
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false,
+                false, true, false, true, false, true, false,
+                false, false, false, true, false, false, false,
+                false, false, false, true, false, false, false
+            ]
+            break;
+
+        case "*":
+            signal = [
+                false, true, true, false, false, false, false,
+                true, false, false, true, false, false, false,
+                true, false, false, true, false, false, false,
+                false, true, true, false, false, false, false
             ]
             break;
         case "!":
