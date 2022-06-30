@@ -1,11 +1,13 @@
-class Display {
+import letterToSignal from "./letterToSignal.js"
+
+export default class Display {
     constructor(htmlDisplayElement) {
         this.display = Array.from(htmlDisplayElement.childNodes);
         //below line removes "text" element in first spot of the array grabbed with .childNodes property
         this.display.shift();
 
         this.emptyDisplay = [];
-        for(i=0; i < this.display.length; i++) {
+        for(let i=0; i < this.display.length; i++) {
             this.emptyDisplay[i] = false;
         }
         this.signal = this.emptyDisplay;
@@ -32,7 +34,7 @@ class Display {
 
     project() {
         this.clearDisplay();       
-        for(i=0; i < this.display.length; i++){
+        for(let i=0; i < this.display.length; i++){
             this.signal[i] ? this.display[i].classList.add("active") : null;
         }
     }

@@ -1,4 +1,5 @@
-function letterToSignal(letter) {
+export default function letterToSignal(letter) {
+    let signal;
     switch(letter) {
         case "A":
             signal = [

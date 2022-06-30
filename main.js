@@ -1,14 +1,20 @@
-const display = document.getElementById('display');
+import initializeDisplay from "./initializeDisplay.js"
+import Display from "./Display.js";
+
+const displayContainer = document.getElementById('display');
 const inputBox = document.getElementById('input-box');
 const btn = document.getElementById('button');
-const numberOfDisplayRows = 90;
-initializeDisplay(display,numberOfDisplayRows);
+const displayWidith = 90;
 
-const dotMatrixDisplay = new Display(display);
+
+initializeDisplay(displayContainer,displayWidith);
+
+const display = new Display(displayContainer);
+
 
 inputBox.addEventListener("input", () => {
-    dotMatrixDisplay.textFromInputToSignal(inputBox);
-    dotMatrixDisplay.project();
+    display.textFromInputToSignal(inputBox);
+    display.project();
 });
 
 btn.addEventListener('click',(e) => {
@@ -28,6 +34,6 @@ setInterval(() => {
     const btnClassList = Array.from(btn.classList);
     
     if(btnClassList.includes('button-active')) {
-        dotMatrixDisplay.animate();
+        display.animate();
     }
 }, 100);
