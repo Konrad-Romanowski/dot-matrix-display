@@ -1,3 +1,10 @@
+:root {
+    --main-color: #0395cf;
+    --diode-on: #ff0000;
+    --diode-off: #690000;
+    --body-backround: #fafafa;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +13,12 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: var(--body-backround);
 }
 
 .header {
     height: 70px;
-    background-color: #0395cf;
+    background-color: var(--main-color);
     color: #ffffff;
     font-size: 2.2em;
     line-height: 70px;
@@ -20,20 +27,16 @@ body {
     margin-bottom: 4rem;
 }
 
-.input-header {
-    text-indent: 6px;
-}
-
 .input {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 200px;
+    height: 220px;
     width: 500px;
     margin: auto;
     border-radius: 5px;
-    border: 1px solid #0395cf;
-    padding: 0 1rem;
+    border: 1px solid var(--main-color);;
+    padding: 0 2rem;
     margin-bottom: 4rem;
     background-color: #ffffff;
 }
@@ -44,7 +47,7 @@ body {
     font-size: 1.2rem;
     text-indent: 6px;
     border-radius: 5px;
-    border: 1px solid #0395cf;
+    border: 1px solid var(--main-color);;
 }
 
 .button {
@@ -52,7 +55,7 @@ body {
     line-height: 2rem;
     width: 35%;
     font-size: 1.2rem;
-    background-color: #0395cf;
+    background-color: var(--main-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -60,7 +63,7 @@ body {
 }
 
 .button-active {
-    background-color: #690000;
+    background-color: var(--diode-off);
 }
 
 .button:active {
@@ -89,11 +92,11 @@ body {
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-color: #690000;
+    background-color: var(--diode-off);
     content: "";
 }
 
 .active {
-    background-color: #ff0000;
+    background-color: var(--diode-on);
 }
 
