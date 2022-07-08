@@ -1,16 +1,11 @@
+import createDisplay from "./createDisplay.js";
 import letterToSignal from "./letterToSignal.js"
 
 export default class Display {
-    constructor(htmlDisplayElement) {
-        this.display = Array.from(htmlDisplayElement.childNodes);
-        //below line removes "text" element in first spot of the array grabbed with .childNodes property
-        this.display.shift();
-
-        this.emptyDisplay = [];
-        for(let i=0; i < this.display.length; i++) {
-            this.emptyDisplay[i] = false;
-        }
-        this.signal = this.emptyDisplay;
+    constructor(displayWidith) {
+        this.display = createDisplay(displayWidith);
+        this.emptyDisplaySignal = Array.from({length: this.display.length}, () => false)
+        this.signal = this.emptyDisplaySignal;
     }
 
     textFromInputToSignal(htmlInputElement) {
@@ -19,11 +14,11 @@ export default class Display {
         const signal = text.reduce((signal,letter)=>{
             return [...signal, ...letterSpacing, ...letterToSignal(letter.toUpperCase())]
         },[]);
-        //The emptyDisplay array is concatenated for animation method purposes
-        //it adds empty spaces at the end of the text and allows to use same
-        //project() method and have the animation effect of entering text to the
-        //display after end of it will leave the display area
-        this.signal = [...signal, ...this.emptyDisplay];
+        // The emptyDisplaySignal array is concatenated for animation method purposes
+        // it adds empty spaces at the end of the text and allows to use same
+        // project() method and have the animation effect of entering text to the
+        // display after end of it will leave the display area
+        this.signal = [...signal, ...this.emptyDisplaySignal];
     }
 
     clearDisplay() {
@@ -34,7 +29,7 @@ export default class Display {
 
     project() {
         this.clearDisplay();       
-        for(let i=0; i < this.display.length; i++){
+        for(let i = 0; i < this.display.length; i++){
             this.signal[i] ? this.display[i].classList.add("active") : null;
         }
     }
