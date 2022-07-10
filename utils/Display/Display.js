@@ -30,7 +30,7 @@ export default class Display {
     project() {
         this.clearDisplay();       
         for(let i = 0; i < this.display.length; i++){
-            this.signal[i] ? this.display[i].classList.add("active") : null;
+            this.signal[i] ? this.display[i].classList.add('active') : null;
         }
     }
 

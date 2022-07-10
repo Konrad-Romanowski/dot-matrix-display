@@ -1,11 +1,11 @@
 import Display from "./utils/Display/Display.js";
-import Form from "./utils/Form/Form.js"
+import DisplayControllerForm from "./utils/Form/DisplayControllerForm.js"
 
-const inputBox = document.getElementById('input-box');
+const inputBox = document.getElementById('form-text-input');
 const displayWidith = 90;
 
 const display = new Display(displayWidith);
-const form = new Form(display);
+const displayControllerForm = new DisplayControllerForm(display);
 
 window.onload = function () {
     display.textFromInputToSignal(inputBox);
