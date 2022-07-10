@@ -1,5 +1,5 @@
 import Display from "./utils/Display/Display.js";
-import DisplayControllerForm from "./utils/Form/DisplayControllerForm.js"
+import DisplayControllerForm from "./utils/DisplayControllerForm/DisplayControllerForm.js"
 
 const inputBox = document.getElementById('form-text-input');
 const displayWidith = 90;
